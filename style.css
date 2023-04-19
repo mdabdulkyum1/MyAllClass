@@ -1,0 +1,118 @@
+ 
+ .search-overly {
+     position: absolute;
+     top: 100%;
+     width: 300px;
+     background: #ffffff;
+     z-index: 2;
+     padding: 20px;
+     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+     margin-top: 25px;
+     right: 0; 
+     visibility: hidden;
+ }
+
+ .search-input {
+     display: block;
+     width: 100%;
+     height: 50px;
+     line-height: initial;
+     border: 1px solid #eeeeee;
+     color: #111111;
+     outline: 0;
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+     padding-top: 4px;
+     padding-left: 10px;
+     position: relative;
+    
+ } 
+ .search-input-hide{
+    visibility: visible !important;
+ }
+ .search-input:focus{
+    border:1px solid #e73c3e;
+ }
+ .search-button {
+     position: absolute;
+     right: 20px;
+     top: 20px;
+     height: 50px;
+     background: transparent;
+     border: none;
+     width: 50px;
+     outline: 0;
+     color: #606060;
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+     padding: 0;
+ }
+ 
+.search-button:hover i{
+	color: #e73c3e;
+}
+ .callbtn {
+	font-size: 30px;
+	color: #e73c3e;
+	position: absolute;
+	left: -41px;
+	top: 15px;
+}
+.leftline::before {
+	position: absolute;
+	left: -51px;
+	top: 16px;
+	width: 1px;
+	content: '';
+	height: 28px;
+	background-color: #dadada;
+}
+
+.navbar-nav{
+    flex-basis: 60%  !important;
+    justify-content:flex-end;
+
+}
+
+
+ .others-options {
+     flex-basis: 36% !important;
+ }
+
+
+
+
+
+
+ /* golobal btn */
+ .btn-primary {
+     background-color: red !important;
+     position: relative;
+     padding: 10px 35px;
+     z-index: 1;
+ }
+
+ .btn-primary::after {
+     content: "" !important;
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 0%;
+     border-radius: 7px;
+     background-color: black !important;
+     transition: all .6s;
+     z-index: -1;
+ }
+
+ .btn-primary:hover::after {
+     width: 100%;
+ }
+
+
+ /* banner Area css */
+ .main-banner-area{
+    background: url(img/main-banner2.jpg) center no-repeat;
+    background-size: cover;
+ }
